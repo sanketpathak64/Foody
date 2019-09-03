@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/allback"
+    tools:context=".register">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical"
+            android:paddingTop="56dp">
+
+            <!--logo-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/choose_img"
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/pic_image"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="Name :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/uname_of_member"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+
+            <!--name of owner-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="Owner :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/uname_of_owner"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <!--Address of Mess-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="Address:"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/uAddress_of_mess"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+
+            <!--<RadioGroup-->
+                <!--android:id="@+id/loc"-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:layout_marginLeft="2dp"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:text="Location: "-->
+                    <!--android:textSize="18sp" />-->
+                <!--<RadioButton-->
+                    <!--android:id="@+id/manually"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:text="Manually"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:checked="true"/>-->
+                <!--<RadioButton-->
+                    <!--android:id="@+id/currentloc"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Current"/>-->
+
+            <!--</RadioGroup>-->
+
+            <!--lattitude-->
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="8dp">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/lat"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="Lattitude" />-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--Fees of Mess-->
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="8dp">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/lng"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="Longitude" />-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--Fees of Mess-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="Fees :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/ufees_of_mess"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Morning Time:"
+                android:textStyle="italic"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="18sp"/>
+            <!--from-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="from :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/umornfrom"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+            <!--to-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="to :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/umornto"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evening Time:"
+                android:textStyle="italic"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="18sp"/>
+            <!--from-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="from :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/uevenfrom"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+            <!--to-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="to :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/uevento"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+
+            <!--phone number-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="Mob No :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/uphone_no"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="menu :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="18sp"
+                    android:text="today's menu" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="weekly menu :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/weeklymenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="18sp"
+                    android:text="weekly menu" />
+            </LinearLayout>
+
+
+
+            <!--Login button-->
+            <!--android:text="LOGIN"  android:text="No account yet? Create one"-->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/ubtn_signup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:text="Join Request" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

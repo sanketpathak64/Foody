@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/edit_profile" android:title="Edit Profile" android:icon="@drawable/profile"/>
+    <item android:id="@+id/members" android:title="Members" android:icon="@drawable/member"/>
+    <item android:id="@+id/memreq" android:title="Requests" android:icon="@drawable/notifications"/>
+    <!--<item android:id="@+id/workers" android:title="Workers" android:icon="@drawable/workers"/>-->
+    <item android:id="@+id/grocery" android:title="Grocery" android:icon="@drawable/grocery"/>
+    <item android:id="@+id/food_menu" android:title="Food Menu" android:icon="@drawable/food_menu"/>
+    <!--<item android:id="@+id/progress" android:title="Progress" android:icon="@drawable/progress"/>-->
+    <item android:id="@+id/logout_btn" android:title="Logout" android:icon="@drawable/logout" />
+</menu>

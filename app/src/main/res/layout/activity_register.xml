@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/allback"
+    tools:context=".register">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical"
+            android:paddingTop="56dp">
+
+            <!--logo-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/choose_img"
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/pic_image"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:layout_marginBottom="15dp"/>
+
+            <!--name of mess-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/name_of_mess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name Of Mess"
+                    android:inputType="textCapWords" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--name of owner-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/name_of_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name Of Owner"
+                    android:inputType="textCapWords" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Address of Mess-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/Address_of_mess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address Of Mess"
+                    android:inputType="textCapWords" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <RadioGroup
+                android:id="@+id/loc"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="Location: "
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:id="@+id/manually"
+                    android:layout_marginLeft="8dp"
+                    android:text="Manually"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/currentloc"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current"/>
+
+            </RadioGroup>
+
+            <!--lattitude-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/lat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Lattitude" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Fees of Mess-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/lng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Longitude" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Fees of Mess-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/fees_of_mess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Fees Of Mess per month"
+                    android:inputType="textCapWords" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Morning Time:"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"
+                android:textSize="18sp"/>
+            <!--from-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/mornfrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="From" />
+            </android.support.design.widget.TextInputLayout>
+            <!--to-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/mornto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="To" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evening Time:"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"
+                android:textSize="18sp"/>
+            <!--from-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/evenfrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="From" />
+            </android.support.design.widget.TextInputLayout>
+            <!--to-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/evento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="To" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!--phone number-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--input_email-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Password-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Login button-->
+            <!--android:text="LOGIN"  android:text="No account yet? Create one"-->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_signup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:text="Create Account" />
+
+            <!--Register link-->
+            <TextView
+                android:id="@+id/link_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="Already a member? Login"
+                android:textSize="16dip" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="0.761" />
+</android.support.constraint.ConstraintLayout>

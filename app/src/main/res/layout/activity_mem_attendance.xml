@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/allback"
+    tools:context=".mem_attendance">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/meals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meals Remaining:  "
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:visibility="invisible"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="renew date:  "
+            android:textAlignment="center"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/rdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textAlignment="center"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="expiry date:  "
+            android:textAlignment="center"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/edate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/at"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

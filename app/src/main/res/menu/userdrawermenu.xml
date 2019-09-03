@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/edit_profile" android:title="Edit Profile" android:icon="@drawable/profile"/>
+    <item android:id="@+id/curr_mess" android:title="Curr mess" android:icon="@drawable/curr_mess"/>
+    <item android:id="@+id/new_mess" android:title="New mess" android:icon="@drawable/food_menu"/>
+    <item android:id="@+id/guest" android:title="Guest" android:icon="@drawable/guest"/>
+    <item android:id="@+id/payment" android:title="payment" android:icon="@drawable/guest"/>
+    <item android:id="@+id/logout_btn" android:title="Logout" android:icon="@drawable/logout" />
+</menu>

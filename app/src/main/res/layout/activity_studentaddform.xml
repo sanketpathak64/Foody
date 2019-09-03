@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/allback"
+    tools:context=".register">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical"
+            android:paddingTop="56dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADDMISSION FORM"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginBottom="24dp"/>
+
+            <!--logo-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/foodylogo1" />
+
+            <!--name of mess-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/name_of_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name Of Member"
+                    android:inputType="textCapWords" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--phone number-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--password-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Residential Address"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Password-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/work_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Work Place"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Login button-->
+            <!--android:text="LOGIN"  android:text="No account yet? Create one"-->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/add_account"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:text="ADD" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="0.761" />
+</android.support.constraint.ConstraintLayout>

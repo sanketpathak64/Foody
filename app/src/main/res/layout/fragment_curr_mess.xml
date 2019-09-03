@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/allback"
+    tools:context=".register">
+
+    <TextView
+        android:id="@+id/nocurrmess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="You have not registered for any mess"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/curmes"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:id="@+id/curmes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:visibility="invisible"
+        >
+    <ScrollView
+        android:layout_weight="8"
+        android:id="@+id/scrollView3"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical"
+            android:paddingTop="56dp">
+
+            <!--logo-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/p_img"
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/pic_image"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="Name :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/umessname"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+
+            <!--name of owner-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="Owner :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/uownername"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <!--Address of Mess-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="Address:"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/umessAddress"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <!--Fees of Mess-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="Fees :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/umessfees"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Morning Time:"
+                android:textStyle="italic"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="18sp"/>
+            <!--from-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="from :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/utmornfrom"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+            <!--to-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="to :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/utmornto"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evening Time:"
+                android:textStyle="italic"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="18sp"/>
+            <!--from-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="from :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/utevenfrom"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+            <!--to-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="to :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/utevento"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+
+            <!--phone number-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:text="Mob No :"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/utphone_no"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <!--Login button-->
+            <!--android:text="LOGIN"  android:text="No account yet? Create one"-->
+
+        </LinearLayout>
+    </ScrollView>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/uattendance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:text="Attendance" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/utodaysmenu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:text="Food Menu" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/renew"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="12dp"
+            android:text="RENEW" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="7dp"
+    android:elevation="90dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F5CCCC">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/messlogo"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#EE0505"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:layout_gravity="center_vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Name: "
+                    android:textSize="24sp"
+                    android:layout_marginRight="4dp"/>
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="24sp"
+                    android:text="krunal parate"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Mob No: "
+                    android:textSize="18sp"
+                    android:layout_marginRight="4dp"/>
+                <TextView
+                    android:id="@+id/mno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:text="9130385756"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <Button
+                    android:id="@+id/accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ACCEPT"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+
+                    />
+                <Button
+                    android:id="@+id/reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="REJECT"
+                    android:textSize="18sp"
+                   android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
